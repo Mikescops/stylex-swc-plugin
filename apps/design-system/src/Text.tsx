@@ -13,5 +13,5 @@ export interface TextProps {
 }
 
 export function Text({ children }: TextProps) {
-  return <span>{children}</span>;
+  return <span {...stylex.props(styles.text)}>{children}</span>;
 }

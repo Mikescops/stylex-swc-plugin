@@ -8,7 +8,7 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
-    "./dist/tokens.stylex": "./dist/tokens.stylex.js"
+    "./dist/tokens.stylex": "./tokens.stylex.js"
   },
   "files": [
     "dist/*"
