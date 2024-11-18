@@ -1,8 +1,9 @@
-import { colors } from '@stylexjs/open-props/lib/colors.stylex'
-import { fonts } from '@stylexjs/open-props/lib/fonts.stylex'
-import { sizes } from '@stylexjs/open-props/lib/sizes.stylex'
-import * as stylex from '@stylexjs/stylex'
-import { createRoot } from 'react-dom/client'
+import { colors } from '@stylexjs/open-props/lib/colors.stylex';
+import { fonts } from '@stylexjs/open-props/lib/fonts.stylex';
+import { sizes } from '@stylexjs/open-props/lib/sizes.stylex';
+import { tokens } from '@stylexswc/design-system/tokens.stylex';
+import * as stylex from '@stylexjs/stylex';
+import { createRoot } from 'react-dom/client';
 
 const styles = stylex.create({
   main: {
@@ -11,7 +12,7 @@ const styles = stylex.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.pink7,
+    backgroundColor: tokens.pink7,
   },
   card: {
     backgroundColor: colors.blue9,
@@ -23,7 +24,7 @@ const styles = stylex.create({
     color: colors.gray0,
     fontFamily: fonts.mono,
   },
-})
+});
 
 function App() {
   return (
@@ -32,11 +33,11 @@ function App() {
         <span>Blue rounded rectangle</span>
       </div>
     </div>
-  )
+  );
 }
 
-const root = document.getElementById('root')
+const root = document.getElementById('root');
 
 if (root) {
-  createRoot(root).render(<App />)
+  createRoot(root).render(<App />);
 }

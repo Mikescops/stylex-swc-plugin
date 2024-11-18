@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import styleXRSPlugin from '@stylexswc/unplugin/vite'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import styleXRSPlugin from '@stylexswc/unplugin/vite';
 
 export default defineConfig({
   build: {
@@ -14,7 +14,12 @@ export default defineConfig({
         useCSSLayers: true,
         genConditionalClasses: true,
         treeshakeCompensation: true,
+        unstable_moduleResolution: {
+          type: "commonJS",
+          rootDir: new URL(".", import.meta.url).pathname,
+          themeFileExtension: ".stylex",
+        }
       },
     }),
   ],
-})
+});

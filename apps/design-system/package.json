@@ -1,0 +1,26 @@
+{
+  "name": "@stylexswc/design-system",
+  "version": "0.0.0",
+  "description": "A simple design-system",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./tokens.stylex": "./dist/tokens.stylex.js"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc -b"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@stylexjs/stylex": "^0.9.3",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  }
+}
