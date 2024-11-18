@@ -2,6 +2,7 @@ import { colors } from '@stylexjs/open-props/lib/colors.stylex';
 import { fonts } from '@stylexjs/open-props/lib/fonts.stylex';
 import { sizes } from '@stylexjs/open-props/lib/sizes.stylex';
 import { tokens } from '@stylexswc/design-system/dist/tokens.stylex';
+import { Text } from '@stylexswc/design-system';
 import * as stylex from '@stylexjs/stylex';
 import { createRoot } from 'react-dom/client';
 
@@ -31,6 +32,7 @@ function App() {
     <div {...stylex.props(styles.main)}>
       <div {...stylex.props(styles.card)}>
         <span>Blue rounded rectangle</span>
+        <Text>Something</Text>
       </div>
     </div>
   );
