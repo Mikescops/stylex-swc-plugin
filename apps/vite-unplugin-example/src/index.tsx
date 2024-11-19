@@ -1,6 +1,7 @@
 import { colors } from '@stylexjs/open-props/lib/colors.stylex';
 import { fonts } from '@stylexjs/open-props/lib/fonts.stylex';
 import { sizes } from '@stylexjs/open-props/lib/sizes.stylex';
+import { tokens } from '@stylexswc/design-system/tokens.stylex';
 import { Text } from '@stylexswc/design-system';
 import * as stylex from '@stylexjs/stylex';
 import { createRoot } from 'react-dom/client';
@@ -12,6 +13,7 @@ const styles = stylex.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: tokens.pink7,
   },
   card: {
     backgroundColor: colors.blue9,
